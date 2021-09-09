@@ -8,11 +8,11 @@ class Solution:
         for i in num:
             str_turple += str(i)
 
-        int_str = int(str_turple) + k
-        int_str2 = str(int_str)
+        str_int = int(str_turple) + k
+        int_str = str(str_int)
 
         output = []
-        for n in int_str2:
+        for n in int_str:
             output.append(int(n))
         return output
 ```
