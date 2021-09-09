@@ -1,5 +1,7 @@
+# 91算法 
+
+### DAY1
 [989. Add to Array-Form of Integer](https://leetcode-cn.com/problems/add-to-array-form-of-integer/)
-# 91算法 DAY1
 #### 想法：最brutal way： traverse list->str->int->list 
 the brutal way
 ```python
