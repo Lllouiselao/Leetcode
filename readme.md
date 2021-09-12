@@ -2,7 +2,7 @@
 
 * DAY1
 [989. Add to Array-Form of Integer](https://leetcode-cn.com/problems/add-to-array-form-of-integer/)
-#### 想法：最brutal way： traverse list->str->int->list 这种情况下 python不会溢出但是别的语言会 需要优化
+#### thought：brutal way： traverse list->str->int->list python is fine with this but in other language will cause an overflow because the length of the list is super long
 
 the brutal way
 [989 file](https://github.com/Lllouiselao/Leetcode/blob/master/Array/989_Add_To_Array.py)
