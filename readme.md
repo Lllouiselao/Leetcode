@@ -45,3 +45,29 @@ class CustomStack:
                 return
 ```
 #### complexcity pop:O(1) Push:O(1) increment:O(min(k, stack_len))
+
+
+***
+* DAY4
+[394. Decode String](https://leetcode-cn.com/problems/decode-string/)
+#### thoughts: think about -> [20. Valid Parentheses](https://leetcode-cn.com/problems/valid-parentheses/) but didn't know how to get touch on this, still didn't familiar with how stack work
+```python
+class Solution:
+    def decodeString(self, s: str) -> str:
+        num_stack = []  
+        num_val = 0
+        result = ""  
+        for ele in s:
+            if ele.isdigit():
+                num_val = num_val * 10 + int(ele)
+            elif ele == "[":
+                num_stack.append([result, num_val])
+                result, num_val = "", 0
+            elif ele == "]":
+                top = num_stack.pop()
+                result = top[0] + result * top[1]
+            else:
+                result += ele
+        return result
+```
+#### Complexcity O(n)
